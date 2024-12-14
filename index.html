@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Student Data Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Student data form</h2>
+        <br>
+        <Form>
+            <label for="identity">ID :</label>
+            <input type="text" id="identity" name="" required="" onkeyup="val(this)">
+            <br><br>
+            <label for="fullname">Name :</label>
+            <input type="text" id="fullname" name=""  required="" placeholder="Enter your name" onkeyup="nam(this)">
+            <br><br>
+            <label for="age">Age :</label>
+            <input type="number" id="age"  required="">
+            <br><br>
+            <label for="gender">Gender :</label>
+            <input type="radio" id="gender"  required="" name="gender">
+            <label for="">Male</label> 
+            <input type="radio" name="gender" id="gender">
+            <label for="">Female</label>
+            <br><br>
+            <label for="address">Address :</label>
+            <textarea name="address" id="address" required=""></textarea>
+            <br><br>
+            <label for="mobile">Mobile :</label>
+            <input type="tel" id="mobile" required="" onkeyup="MobNum(this)">
+            <br><br>
+            <input type="submit" name="submit" onclick="submitDoc()">
+            <input type="reset" name="reset" id="reset">
+        </Form>
+        <br>
+        <h3 id="res"></h3>
+    </div>
+    <Script src="script.js"></Script>
+</body>
+
+</html>
